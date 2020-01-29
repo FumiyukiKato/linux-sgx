@@ -102,10 +102,13 @@ int main(int argc, char *argv[]) {
             CSelector* selector = new CSelector(serverSock);
             server = new CAESMServer(serverSock, selector, aesmLogic);
 
-            AESM_LOG_WARN("The server sock is %#lx" ,serverSock);   
-
+	    AESM_LOG_WARN("ok-1");
+            AESM_LOG_WARN("#############The server sock is %#lx" ,serverSock);
+	    AESM_LOG_WARN("ok0");
             server->init();
+	    AESM_LOG_WARN("ok1");
             server->doWork();
+	    AESM_LOG_WARN("ok2");
             CAESMServer* temp_server = server;
             server = NULL;
     	    delete temp_server;
