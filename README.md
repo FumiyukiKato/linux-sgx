@@ -1,4 +1,4 @@
-fork from https://github.com/intel/linux-sgx
+fork from https://github.com/intel/linux-sgx **ver2.8**
 
 ### change 
 - debian/rules files
